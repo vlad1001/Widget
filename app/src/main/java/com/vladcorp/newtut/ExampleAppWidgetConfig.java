@@ -66,10 +66,10 @@ public class ExampleAppWidgetConfig extends AppCompatActivity {
         RemoteViews views = new RemoteViews(this.getPackageName(), R.layout.example_widget);
         Log.d("ptt", "ms;vp ");
 
-        //views.setOnClickPendingIntent(R.id.btn_txt, pendingIntent);
+        views.setOnClickPendingIntent(R.id.example_widget_imageview, clickPendingIntent);
 
         views.setCharSequence(R.id.btn_txt, "setText", buttonText);
-        views.setPendingIntentTemplate(R.id.example_widget_imageview, clickPendingIntent);
+       // views.setPendingIntentTemplate(R.id.example_widget_imageview, clickPendingIntent);
 
         Log.d("ptt", "htre");
         Toast.makeText(getApplicationContext(), "check22", Toast.LENGTH_LONG).show();
